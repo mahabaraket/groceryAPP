@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:grocery_app/core/routes/app_routes.dart';
+import 'package:grocery_app/core/routes/on_geerate_route.dart';
 import 'package:grocery_app/core/themes/app_themes.dart';
 
 void main() {
@@ -14,6 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Grocery APP',
       theme: AppTheme.defaultTheme,
+      onGenerateRoute: RouteGenerator.onGenerate,
+      initialRoute: AppRoutes.onboarding,
     );
   }
 }
