@@ -4,5 +4,10 @@ class AppRoutes {
 
   static const login = '/login';
   static const signup = '/signup';
+  static const numberVerification = '/numberVerification';
+  static const forgotPassword = '/forgotPassword';
+  static const passwordReset = '/passwordReset';
   static const loginOrSignup = '/loginOrSignup';
+
+  static const entryPoint = '/entry_point';
 }
